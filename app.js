@@ -14,14 +14,10 @@ const PORT = process.env.PORT;
 
 app.listen(PORT);
 
-app.get("/api", (req, res) => {
-  res.setHeader("Content-Type", "text/html");
-  res.setHeader("Cache-Control", "s-max-age=1, stale-while-revalidate");
+app.get("/", (req, res) => {
   res.render("index");
 });
 
 app.use((req, res) => {
-  res.redirect("/api");
+  res.redirect("/");
 });
-
-module.exports = app;
