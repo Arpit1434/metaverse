@@ -21,3 +21,5 @@ app.get("/", (req, res) => {
 app.use((req, res) => {
   res.redirect("/");
 });
+
+module.exports = app;
