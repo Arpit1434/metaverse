@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 app.use((req, res) => {
-  res.redirect("/");
+  res.render("404");
 });
 
 module.exports = app;
