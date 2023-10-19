@@ -26,6 +26,10 @@ app.get("/enliven", (req, res) => {
   res.render("enliven");
 });
 
+app.get("/techbyheart", (req, res) => {
+  res.render("techbyheart");
+});
+
 app.use((req, res) => {
   res.redirect("/");
 });

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="styles/event.css" />
+    <title>Digital Battle - Metaverse</title>
+  </head>
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div class="event-container">
+        <div class="event-poster-container">
+          <img
+            src="../images/event/techbyheart.jpg"
+            alt="TechByHeart"
+            class="event-poster"
+            height="650"
+          />
+        </div>
+        <div class="event-details">
+          <div class="container">
+            <div class="container-title">About Event</div>
+            <p>Greetings from Metaverse, Labyrinth!! TechByHeart has come with a great opportunity, a workshop on Cyber Forensic and Data Security with Mr. Babu Madhavan. We only have 25 seats for this event. So, Hurry up and register yourselves!!</p>
+            <p>Date: 26th October, 2023</p>
+            <p>Time: 4:00 pm-5:30 pm</p>
+            <p>Venue: Assembly hall, Block 2</p>
+            <div class="buttons">
+              <button onclick="location.href='https://forms.gle/7Lk9HR9U8QZ8fuY76'">Register</button>
+              <button
+                onclick="location.href='https://chat.whatsapp.com/FG82kWAf9PH2JWjXsxaRtc'"
+                class="whatsapp-button"
+              >
+                Whatsapp <i class="fa fa-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+          <%- include("../partials/contact.ejs") %>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
