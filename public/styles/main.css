@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
 
@@ -9,14 +10,18 @@ body {
   background-color: #131517;
 }
 
-nav {
+header {
   margin: 0 30px;
   padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-h1 {
+#logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
+  gap: 10px;
 }
 
 #logo {
@@ -24,52 +29,77 @@ h1 {
   mix-blend-mode: plus-lighter;
 }
 
+h1 {
+  color: white;
+  font-size: 32px;
+  font-family: "Abel", sans-serif;
+}
+
 main {
-  display: flex;
-  justify-content: center;
+  margin: 10px;
+  padding: 0 120px;
 }
 
-.content {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.details {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.about,
-.contact {
-  margin: 10px 0;
-  padding: 30px 50px;
+.container {
+  margin-bottom: 20px;
+  padding: 10px 30px;
   background-color: #212325;
   border-radius: 10px;
-  max-width: 750px;
 }
 
-.about-title,
-.contact-title {
-  font-size: 18px;
-  font-weight: bolder;
+.container-title {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-hr {
+.container p {
+  margin: 5px 0;
+}
+
+.card {
+  margin: 20px 0;
+  display: flex;
+  gap: 30px;
+}
+
+.card-img {
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-details {
+  display: flex;
+  gap: 10px;
+}
+
+.card-details * {
+  font-size: 16px;
+}
+
+.card-date {
+  font-weight: bold;
+}
+
+.card-category {
+  font-style: italic;
+}
+
+.card-title {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.register-button {
   margin: 10px 0;
-}
-
-.buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 10px;
 }
 
 button {
@@ -87,6 +117,17 @@ button:hover {
   background-color: rgba(30, 144, 255, 0.85);
 }
 
+button[disabled] {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(30, 144, 255, 0.4);
+}
+
+button[disabled]:hover {
+  cursor: not-allowed;
+  outline: none;
+  background-color: rgba(30, 144, 255, 0.4);
+}
+
 .whatsapp-button {
   background-color: rgb(37, 211, 102);
 }
@@ -95,60 +136,109 @@ button:hover {
   background-color: rgb(37, 211, 102, 0.85);
 }
 
+.card-link {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  text-decoration: underline;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 80px;
+}
+
+.past-card {
+  flex-direction: column;
+  width: min-content;
+}
+
+.past-card:hover {
+  cursor: pointer;
+}
+
+.past-card * {
+  text-align: center;
+}
+
+.past-card-details {
+  flex-direction: column;
+}
+
+.contact-card-container {
+  flex-direction: column;
+}
+
 .club-leads,
 .faculty {
+  display: flex;
+  flex-direction: column;
+}
+
+.club-leads-title,
+.faculty-title {
   text-align: center;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 .club-leads-container,
 .faculty-container {
-  margin: 15px 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
-.club-lead,
-.arokia-paul,
-.kirubanand {
-  margin: 0 20px;
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.club-lead-img,
-.faculty-img {
-  margin: 10px 0;
+.contact-img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 
-.club-lead-name,
-.faculty-name {
-  font-weight: bolder;
-  font-size: 18px;
+.contact-name {
+  font-weight: bold;
+}
+
+.contact-info {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1200px) {
-  .event-poster {
-    height: 650px;
-  }
-
-  .content {
-    flex-direction: column;
+  main {
+    padding: 0 80px;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  .event-poster {
-    height: 450px;
+  main {
+    padding: 0 40px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card * {
+    text-align: center;
+  }
+
+  .card-details {
+    flex-direction: column;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  .event-poster {
-    height: 320px;
+  main {
+    padding: 0 20px;
   }
 }

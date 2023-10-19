@@ -12,14 +12,22 @@ app.set("views", path.join(__dirname, "/public/views"));
 dotenv.config();
 const PORT = process.env.PORT;
 
-app.listen(PORT);
+app.listen(PORT, ()=>{console.log(`Listening on PORT ${PORT}`)});
 
 app.get("/", (req, res) => {
   res.render("index");
 });
 
+app.get("/digital-battle", (req, res) => {
+  res.render("digitalbattle");
+});
+
+app.get("/enliven", (req, res) => {
+  res.render("enliven");
+});
+
 app.use((req, res) => {
-  res.render("404");
+  res.redirect("/");
 });
 
 module.exports = app;

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("../partials/head.ejs") %>
+    <link rel="stylesheet" href="styles/event.css" />
+    <title>Digital Battle - Metaverse</title>
+  </head>
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div class="event-container">
+        <div class="event-poster-container">
+          <img
+            src="../images/event/digital_battle.jpeg"
+            alt="Digital Battle"
+            class="event-poster"
+            height="650"
+          />
+        </div>
+        <div class="event-details">
+          <div class="container">
+            <div class="container-title">About Event</div>
+            <p>LABYRINTH- METAVERSE is organizing “Digital Battle”, a workshop on Cyber Security scheduled on 26th August 2023 ( 02:00 PM - 04:00 PM ). Interested students need to register on or before 24th August 2023.</p>
+            <p>We hope maximum students join from Metaverse for a great learning!!</p>
+            <div class="buttons">
+              <button disabled>Register</button>
+              <button
+                onclick="location.href='https://chat.whatsapp.com/FG82kWAf9PH2JWjXsxaRtc'"
+                class="whatsapp-button"
+              >
+                Whatsapp <i class="fa fa-whatsapp"></i>
+              </button>
+            </div>
+          </div>
+          <%- include("../partials/contact.ejs") %>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

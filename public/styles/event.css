@@ -1,0 +1,33 @@
+.event-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .event-poster {
+    height: 650px;
+  }
+
+  .event-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .event-poster {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .event-poster {
+    height: 320px;
+  }
+}

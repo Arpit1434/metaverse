@@ -1,132 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Labyrinth - Metaverse</title>
+    <title>Metaverse - Labyrinth</title>
     <%- include("../partials/head.ejs") %>
   </head>
   <body>
-    <%- include("../partials/nav.ejs") %>
+    <%- include("../partials/header.ejs") %>
     <main>
-      <div class="content">
-        <div class="img-container">
+      <div class="container">
+        <div class="container-title">About</div>
+        <p>
+          Welcome to Metaverse a club where we explore and  conquer. Conquer the technology that is. This is a platform for us to come up with projects and building a network, while also growing with the guidance of your peers. We are gonna have exciting events, informative talks. And if you have any ideas you can always pitch in. 
+So let's make the most of this! 
+        </p>
+        <button onclick="location.href='https://chat.whatsapp.com/FG82kWAf9PH2JWjXsxaRtc'" class="whatsapp-button">Join Whatsapp Group <i class="fa fa-whatsapp"></i></button>
+      </div>
+      <div class="container">
+        <div class="container-title">Upcoming Events</div>
+        <div class="card">
           <img
             src="../images/event/enliven.png"
-            alt="enliven"
-            class="event-poster"
-            height="650"
+            alt="Enliven"
+            class="card-img"
           />
+          <div class="card-body">
+            <div class="card-details">
+              <div class="card-date">12th October, 2023</div>
+              <div class="card-category">Seminar</div>
+            </div>
+            <div class="card-title">Enliven</div>
+            <div class="card-desc">
+              "Enliven", a hands-on session, teaching the fundamentals of Web
+              Development.
+            </div>
+            <div class="register-button">
+              <button>Register</button>
+            </div>
+            <a href="/enliven" class="card-link">&rarr; View details</a>
+          </div>
         </div>
-        <div class="details">
-          <div class="about">
-            <p class="about-title">About the event</p>
-            <hr />
-            At "Enliven," we're unveiling the future of technology and the
-            endless possibilities of the metaverse. Join us for an electrifying
-            experience with Interactive Sessions. Bring your laptops and immerse
-            yourself in hands-on activities. Don't miss this golden opportunity
-            to explore the Metaverse with us. Secure your spot today and prepare
-            for an unforgettable adventure!
-            <div class="buttons">
-              <button
-                onclick="location.href='https://forms.gle/6X4cwpd13UKkxgJR6'"
-              >
-                Register
-              </button>
-              <button
-                onclick="location.href='https://chat.whatsapp.com/FG82kWAf9PH2JWjXsxaRtc'"
-                class="whatsapp-button"
-              >
-                Join Whatsapp
-              </button>
+        <div class="card">
+          <img
+            src="../images/event/digital_battle.jpeg"
+            alt="Digital Battle"
+            class="card-img"
+          />
+          <div class="card-body">
+            <div class="card-details">
+              <div class="card-date">26th August, 2023</div>
+              <div class="card-category">Workshop</div>
+            </div>
+            <div class="card-title">Digital Battle</div>
+            <div class="card-desc">
+              "Digital Battle", a workshop on Cyber Security, taken by Mr
+              Ajinkya Lohakare.
+            </div>
+            <div class="register-button">
+              <button>Register</button>
+            </div>
+            <a href="/digital-battle" class="card-link">&rarr; View details</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="container-title">Past Events</div>
+        <div class="card-container">
+          <div class="card past-card" onclick="location.href='/enliven'">
+            <img
+              src="../images/event/enliven.png"
+              alt="Enliven"
+              class="card-img past-card-img"
+            />
+            <div class="card-body past-card-body">
+              <div class="card-details past-card-details">
+                <div class="card-date past-card-date">12th October, 2023</div>
+                <div class="card-category past-card-category">Seminar</div>
+              </div>
+              <div class="card-title past-card-title">Enliven</div>
+              <div class="card-desc past-card-desc">
+                "Enliven", a hands-on session, teaching the fundamentals of Web
+                Development.
+              </div>
             </div>
           </div>
-          <div class="contact">
-            <div class="contact-title">Contact</div>
-            <hr />
-            <div class="club-leads">Club Leads</div>
-            <div class="club-leads-container">
-              <div class="club-lead">
-                <img
-                  src="../images/contact/zainab.jpg"
-                  alt="zainab"
-                  class="club-lead-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="club-lead-name">Zainab Khan</div>
-                <div class="club-lead-contact">
-                  <div class="club-lead-tel">7619319159</div>
-                </div>
+          <div class="card past-card" onclick="location.href='/digital-battle'">
+            <img
+              src="../images/event/digital_battle.jpeg"
+              alt="Digital Battle"
+              class="card-img past-card-img"
+            />
+            <div class="card-body past-card-body">
+              <div class="card-details past-card-details">
+                <div class="card-date past-card-date">26th August, 2023</div>
+                <div class="card-category past-card-category">Workshop</div>
               </div>
-              <div class="club-lead">
-                <img
-                  src="../images/contact/balaji.jpg"
-                  alt="balaji"
-                  class="club-lead-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="club-lead-name">Balaji P</div>
-                <div class="club-lead-contact">
-                  <div class="club-lead-tel">9141143989</div>
-                </div>
-              </div>
-              <div class="club-lead">
-                <img
-                  src="../images/contact/gauri.jpg"
-                  alt="gauri"
-                  class="club-lead-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="club-lead-name">Gauri Dawar</div>
-                <div class="club-lead-contact">
-                  <div class="club-lead-tel">7828928885</div>
-                </div>
-              </div>
-              <div class="club-lead">
-                <img
-                  src="../images/contact/arpit.jpg"
-                  alt="arpit"
-                  class="club-lead-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="club-lead-name">Arpit Tiwari</div>
-                <div class="club-lead-contact">
-                  <div class="club-lead-tel">9755798139</div>
-                </div>
-              </div>
-            </div>
-            <hr />
-            <div class="faculty">Faculty</div>
-            <div class="faculty-container">
-              <div class="arokia-paul">
-                <img
-                  src="../images/contact/arokia-paul.jpg"
-                  alt="arokia-paul"
-                  class="faculty-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="faculty-name">Arokia Paul Rajan</div>
-                <div class="faculty-contact">Labyrinth Faculty Incharge</div>
-              </div>
-              <div class="kirubanand">
-                <img
-                  src="../images/contact/kirubanand.jpg"
-                  alt="kirubanand"
-                  class="faculty-img"
-                  width="100"
-                  height="100"
-                />
-                <div class="faculty-name">Kirubanand V.B</div>
-                <div class="faculty-contact">Metaverse Coordinator</div>
+              <div class="card-title past-card-title">Digital Battle</div>
+              <div class="card-desc past-card-desc">
+                "Digital Battle", a workshop on Cyber Security, taken by Mr
+                Ajinkya Lohakare.
               </div>
             </div>
           </div>
         </div>
       </div>
+      <%- include("../partials/contact.ejs") %>
     </main>
   </body>
 </html>
