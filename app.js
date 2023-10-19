@@ -30,6 +30,10 @@ app.get("/techbyheart", (req, res) => {
   res.render("techbyheart");
 });
 
+app.get("/react-bootcamp", (req, res) => {
+  res.render("reactbootcamp");
+});
+
 app.use((req, res) => {
   res.redirect("/");
 });
