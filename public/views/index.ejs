@@ -8,6 +8,13 @@
     <%- include("../partials/header.ejs") %>
     <main>
       <div class="container">
+        <img
+          src="../images/event/cyber_forensic_and_data_security.jpeg"
+          alt="Cyber Forensic and Data Security Workshop"
+          class="home-img"
+        />
+      </div>
+      <div class="container">
         <div class="container-title">About</div>
         <p>
           Welcome to Metaverse a club where we explore and conquer. Conquer the
@@ -24,38 +31,34 @@
           Join Whatsapp Group <i class="fa fa-whatsapp"></i>
         </button>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="container-title">Upcoming Events</div>
-        <div class="card">
-          <img
-            src="../images/event/techbyheart.jpg"
-            alt="TechByHeart"
-            class="card-img"
-          />
-          <div class="card-body">
-            <div class="card-details">
-              <div class="card-date">2 - 3rd November, 2023</div>
-              <div class="card-category">Workshop</div>
-            </div>
-            <div class="card-title">Cyber Forensic and Data Security</div>
-            <div class="card-desc">
-              Workshop on Cyber Forensic and Data Security by Dr. Babu Madhavan,
-              Cyber Forensics Investigator, Techbyheart, Kerala.
-            </div>
-            <div class="register-button">
-              <button
-                onclick="location.href='https://forms.gle/7Lk9HR9U8QZ8fuY76'"
-              >
-                Register
-              </button>
-            </div>
-            <a href="/techbyheart" class="card-link">&rarr; View details</a>
-          </div>
-        </div>
-      </div>
+        
+      </div> -->
       <div class="container">
         <div class="container-title">Past Events</div>
         <div class="card-container">
+          <div class="card past-card" onclick="location.href='/techbyheart'">
+            <img
+              src="../images/event/techbyheart.jpg"
+              alt="TechByHeart"
+              class="card-img past-card-img"
+            />
+            <div class="card-body past-card-body">
+              <div class="card-details past-card-details">
+                <div class="card-date past-card-date">
+                  2 - 3rd November, 2023
+                </div>
+                <div class="card-category past-card-category">Workshop</div>
+              </div>
+              <div class="card-title past-card-title">
+                Cyber Forensic and Data Security
+              </div>
+              <div class="card-desc past-card-desc">
+                By Dr. Babu Madhavan, Techbyheart.
+              </div>
+            </div>
+          </div>
           <div class="card past-card" onclick="location.href='/react-bootcamp'">
             <img
               src="../images/event/react_bootcamp.png"
